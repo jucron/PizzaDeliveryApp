@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <!--      One of three columns-->
+    </div>
+    <div class="col-sm-8">
+      <div mat-dialog-content>
+        <h1 mat-dialog-title>Start Order process</h1>
+        Would you like to start a new Order Process?
+      </div>
+      <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>No</button>
+        <button (click)="startProcess()" cdkFocusInitial mat-button mat-dialog-close>Ok</button>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <!--      One of three columns-->
+  </div>
+</div>
+

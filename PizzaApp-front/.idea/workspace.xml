@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="305f7285-6de8-40ba-a08e-0fa529787ed2" name="Changes" comment="Adding first Service">
+      <change beforePath="$PROJECT_DIR$/src/assets/images/card-item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/card-item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/card-item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gauva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/grapes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/orange-dish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/search-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/slide-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/tasty-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/twitter.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EoBtoMdOrLOBwYJNUZSI8f323Y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jrenau01/IdeaProjects/Angular/PizzaApp-front/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Users\\jrenau01\\IdeaProjects\\Angular\\PizzaApp-front\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jrenau01\IdeaProjects\Angular\PizzaApp-front\src\assets" />
+      <recent name="C:\Users\jrenau01\IdeaProjects\Angular\PizzaApp-front\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jrenau01\IdeaProjects\Angular\PizzaApp-front\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="305f7285-6de8-40ba-a08e-0fa529787ed2" name="Changes" comment="" />
+      <created>1663252273531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663252273531</updated>
+      <workItem from="1663252275770" duration="4590000" />
+      <workItem from="1663332082737" duration="10099000" />
+      <workItem from="1663573712642" duration="1077000" />
+      <workItem from="1663575462670" duration="475000" />
+      <workItem from="1663576717861" duration="9556000" />
+      <workItem from="1663591475231" duration="4420000" />
+    </task>
+    <task id="LOCAL-00001" summary="First stable version">
+      <created>1663337724524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337724524</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First routing structure">
+      <created>1663583494072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663583494072</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding first Service">
+      <created>1663596318735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663596318735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First stable version" />
+    <MESSAGE value="First routing structure" />
+    <MESSAGE value="Adding first Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding first Service" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

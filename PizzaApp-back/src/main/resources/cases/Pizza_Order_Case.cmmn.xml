@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:flowable="http://flowable.org/cmmn" xmlns:cmmndi="http://www.omg.org/spec/CMMN/20151109/CMMNDI"
+             xmlns:dc="http://www.omg.org/spec/CMMN/20151109/DC"
+             xmlns:di="http://www.omg.org/spec/CMMN/20151109/DI" xmlns="http://www.omg.org/spec/CMMN/20151109/MODEL"
+             targetNamespace="http://flowable.org/cmmn">
+  <case id="pizzaOrderCase" name="Pizza Order Case" flowable:initiatorVariableName="initiator">
+    <casePlanModel id="onecaseplanmodel1" name="Pizza Order" flowable:formFieldValidation="false" autoComplete="true">
+      <planItem id="planItem2" name="Selection stage" definitionRef="expandedStage1"></planItem>
+      <planItem id="planItem4" name="Order follow-up stage" definitionRef="expandedStage2">
+        <entryCriterion id="sid-DB6066ED-DADE-4BA0-84E8-02499019D7EF" flowable:sentryRef="sentry3"></entryCriterion>
+      </planItem>
+      <planItem id="planItem6" name="Client's feedback Stage" definitionRef="expandedStage3">
+        <entryCriterion id="sid-6C64271B-886B-414D-87F3-B4FC290B76ED" flowable:sentryRef="sentry1"></entryCriterion>
+      </planItem>
+      <planItem id="planItem7" name="Cancel process" definitionRef="cancelProcess"></planItem>
+      <sentry id="sentry3">
+        <planItemOnPart id="sentryOnPart1" sourceRef="planItem2">
+          <standardEvent>complete</standardEvent>
+        </planItemOnPart>
+      </sentry>
+      <sentry id="sentry1">
+        <planItemOnPart id="sentryOnPart2" sourceRef="planItem4">
+          <standardEvent>complete</standardEvent>
+        </planItemOnPart>
+      </sentry>
+      <stage id="expandedStage1" name="Selection stage" autoComplete="true">
+        <planItem id="planItem1" name="Execute Order" definitionRef="executeOrder"></planItem>
+        <humanTask id="executeOrder" name="Execute Order" flowable:formFieldValidation="true"></humanTask>
+      </stage>
+      <stage id="expandedStage2" name="Order follow-up stage" autoComplete="true">
+        <planItem id="planItem3" name="End follow-up" definitionRef="endFollowUp"></planItem>
+        <humanTask id="endFollowUp" name="End follow-up" flowable:formFieldValidation="true"></humanTask>
+      </stage>
+      <stage id="expandedStage3" name="Client's feedback Stage" autoComplete="true">
+        <planItem id="planItem5" name="Send feedback" definitionRef="sendFeedback"></planItem>
+        <humanTask id="sendFeedback" name="Send feedback" flowable:formFieldValidation="true"></humanTask>
+      </stage>
+      <userEventListener id="cancelProcess" name="Cancel process"></userEventListener>
+    </casePlanModel>
+  </case>
+  <cmmndi:CMMNDI>
+    <cmmndi:CMMNDiagram id="CMMNDiagram_pizzaOrderCase">
+      <cmmndi:CMMNShape id="CMMNShape_onecaseplanmodel1" cmmnElementRef="onecaseplanmodel1">
+        <dc:Bounds height="692.6251282436485" width="580.0" x="29.999999999999975" y="45.00000000000003"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem2" cmmnElementRef="planItem2">
+        <dc:Bounds height="170.0" width="370.00000000000006" x="90.0" y="75.0"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem1" cmmnElementRef="planItem1">
+        <dc:Bounds height="80.0" width="100.0" x="138.4502631146479" y="120.0"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem4" cmmnElementRef="planItem4">
+        <dc:Bounds height="169.99999999999997" width="370.00000000000006" x="91.00000000000001" y="298.8219923885314"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_sid-DB6066ED-DADE-4BA0-84E8-02499019D7EF" cmmnElementRef="sid-DB6066ED-DADE-4BA0-84E8-02499019D7EF">
+        <dc:Bounds height="22.00000000000003" width="14.000000000000004" x="264.8125521313042" y="287.38042744651057"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem3" cmmnElementRef="planItem3">
+        <dc:Bounds height="80.0" width="100.00000000000001" x="139.4502631146479" y="338.51806926511784"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem6" cmmnElementRef="planItem6">
+        <dc:Bounds height="170.00000000000003" width="370.00000000000006" x="91.00000000000001" y="517.9581201401211"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_sid-6C64271B-886B-414D-87F3-B4FC290B76ED" cmmnElementRef="sid-6C64271B-886B-414D-87F3-B4FC290B76ED">
+        <dc:Bounds height="22.00000000000003" width="13.999999999999975" x="283.5813032160114" y="505.9824014844635"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem5" cmmnElementRef="planItem5">
+        <dc:Bounds height="80.0" width="100.00000000000001" x="139.4502631146479" y="562.9581201401211"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="CMMNShape_planItem7" cmmnElementRef="planItem7">
+        <dc:Bounds height="30.501000000000005" width="30.498000000000022" x="517.958120140121" y="391.1576218880474"></dc:Bounds>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="CMMNEdge_sid-B77B4A13-12E6-4ABA-A302-0AD5418F56F3" cmmnElementRef="sid-6C64271B-886B-414D-87F3-B4FC290B76ED" targetCMMNElementRef="planItem4">
+        <di:waypoint x="291.5813032160114" y="507.55383005589204"></di:waypoint>
+        <di:waypoint x="291.5813032160114" y="468.7719923885314"></di:waypoint>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNEdge id="CMMNEdge_sid-70B93325-A921-4C77-BE2D-BAB741DCF476" cmmnElementRef="sid-E532E1E3-43A4-448C-A276-46B1BF95D656" targetCMMNElementRef="cancelProcess">
+        <di:waypoint x="594.7532458947888" y="405.51515339261545"></di:waypoint>
+        <di:waypoint x="548.4045561899511" y="406.18708645216896"></di:waypoint>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNEdge id="CMMNEdge_sid-23BAAB7D-1F7F-4486-8A9A-B774215C0CB9" cmmnElementRef="sid-DB6066ED-DADE-4BA0-84E8-02499019D7EF" targetCMMNElementRef="planItem2">
+        <di:waypoint x="272.49948598649814" y="288.45989493324396"></di:waypoint>
+        <di:waypoint x="270.9725059494424" y="244.95"></di:waypoint>
+        <cmmndi:CMMNLabel></cmmndi:CMMNLabel>
+      </cmmndi:CMMNEdge>
+    </cmmndi:CMMNDiagram>
+  </cmmndi:CMMNDI>
+</definitions>

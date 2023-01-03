@@ -1,0 +1,17 @@
+
+spring:
+  sql:
+    init:
+      platform: h2
+  jpa:
+    show-sql: true
+
+server:
+  port: 8081
+#  ssl:
+#    key-store: classpath:keystore/pizzaDelivery.p12
+#    key-store-password: password
+#    key-store-type: pkcs12
+#    key-alias: pizzaDelivery
+#    key-password: password
+#    enabled: false

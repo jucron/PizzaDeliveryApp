@@ -1,0 +1,57 @@
+<app-client></app-client>
+<body class="text-center">
+<div class="container-fluid">
+  <!-- row 4x4x4-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <main class="form-signin">
+        <form
+          (ngSubmit)="onSubmit(orderForm.value)"
+          [formGroup]="orderForm">
+          <img alt="" class="mb-4" height="100xp" src="/assets/images/notes.png" width="100px">
+          <h1 class="h3 mb-3 fw-normal">Enter the Order Details!</h1>
+
+          <label>Your Name: </label>
+          <input aria-label="default input example" class="form-control" formControlName="clientName" name="clientName" type="text">
+          <p></p>
+          <label>Pizza Flavor: </label>
+          <select aria-label="Default select example" class="form-select" formControlName="pizzaFlavor">
+
+<!--            <option selected>Select your Pizza Flavor</option>-->
+            <option *ngFor="let flavor of pizzaFlavors" value="{{flavor}}">{{flavor}}</option>
+          </select>
+          <p></p>
+          <label>Your Address:</label>
+          <input aria-label="default input example" class="form-control" formControlName="address" type="text">
+          <p></p>
+          <input class="form-check-input" formControlName="paid" id="paidCheck" type="checkbox" value="true">
+          <label class="form-check-label" for="paidCheck">
+             Pay online?
+          </label>
+          <div *ngIf="orderForm.get('paid').value===true">
+          <label>Enter your credit card number (not really =D): </label>
+          <input aria-label="default input example" class="form-control" type="text">
+          </div>
+          <p></p>
+
+          <!--          row 4x4x4-->
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+              <button [disabled]="!orderForm.valid" class="w-100 btn btn-lg btn-primary" type="submit">Order</button>
+            </div>
+            <div class="col-md-4">
+              <button [routerLink]="['/client']" class="w-100 btn btn-lg btn-secondary" skipLocationChange="true" >Back</button>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </form>
+      </main>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
+</body>

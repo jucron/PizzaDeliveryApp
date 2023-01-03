@@ -1,0 +1,24 @@
+<nav aria-label="First navbar example" class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Pizza Delivery App</a>
+    <button aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarsExample01" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2">
+        <li class="nav-item">
+          <a aria-current="page" class="nav-link active" href="/">Home</a>
+        </li>
+        <li *ngIf="mainUsername==null" class="nav-item">
+          <a aria-disabled="true" class="nav-link disabled" href="#" tabindex="-1">Logout</a>
+        </li>
+        <li *ngIf="mainUsername!=null" class="nav-item">
+          <a (click)="onSubmit()" aria-current="page" class="nav-link active" href="/client" tabindex="-1">Logout (logged in as {{mainUsername}})</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p></p>
+

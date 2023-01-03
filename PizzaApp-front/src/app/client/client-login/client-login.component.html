@@ -1,0 +1,46 @@
+<app-client></app-client>
+<body class="text-center">
+<div class="container-fluid">
+  <!-- row 4x4x4-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <main class="form-signin">
+        <form
+        (ngSubmit)="onSubmit(loginForm.value)"
+        [formGroup]="loginForm">
+          <img alt="" class="mb-4" height="200xp" src="/assets/images/pizza-login.png" width="300px">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+          <div class="form-floating">
+            <input class="form-control" formControlName="username" id="floatingInput" placeholder="username" type="name">
+            <label for="floatingInput">Login</label>
+          </div>
+          <div class="form-floating">
+            <input class="form-control" formControlName="password" id="floatingPassword" placeholder="Password" type="password">
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+<!--          row 4x4x4-->
+          <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <button [disabled]="!loginForm.valid" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          </div>
+          <div class="col-md-4"></div>
+          </div>
+          <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+        </form>
+      </main>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
+</body>

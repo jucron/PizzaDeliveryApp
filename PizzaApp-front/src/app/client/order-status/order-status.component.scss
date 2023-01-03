@@ -1,0 +1,17 @@
+$border-track-color: 10px solid #000000;
+
+.table {
+  //border-left: $border-track-color;
+  //border-right: $border-track-color;
+  text-align: center;
+  //width: 70%;
+  //alignment-baseline: center;
+  table-layout: fixed;
+  //overflow: hidden;
+}
+
+.img-fluid {
+  width: 50%;
+  height: 50%;
+  //alignment-baseline: auto;
+}

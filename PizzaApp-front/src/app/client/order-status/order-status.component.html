@@ -72,7 +72,7 @@
         <button (click)="closeTask()" [disabled]="order.status!='finished'" class="w-100 btn btn-lg btn-info" type="submit">End My Status Check</button>
       </div>
       <div class="col-md-2">
-        <button [routerLink]="['/client']" class="w-100 btn btn-lg btn-secondary" skipLocationChange="true" >Back</button>
+        <button (click)="closeIntervalSubscription()" [routerLink]="['/client']" class="w-100 btn btn-lg btn-secondary" skipLocationChange="true" >Back</button>
       </div>
       <div class="col-md-4">
 

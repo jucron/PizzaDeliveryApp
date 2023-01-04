@@ -5,12 +5,18 @@
     </div>
     <div class="col-sm-8">
       <div mat-dialog-content>
-        <h1 mat-dialog-title>Start Order process</h1>
+        <h1 mat-dialog-title>Start Order Process</h1>
         Would you like to start a new Order Process?
       </div>
       <div mat-dialog-actions>
-        <button mat-button mat-dialog-close>No</button>
-        <button (click)="startProcess()" cdkFocusInitial mat-button mat-dialog-close>Ok</button>
+        <div class="row">
+          <div class="col-sm-6">
+            <button class="btn btn-secondary" mat-button mat-dialog-close type="button">No</button>
+          </div>
+          <div class="col-sm-6">
+            <button (click)="startProcess()" cdkFocusInitial class="btn btn-success" mat-button mat-dialog-close type="button">Yes!</button>
+          </div>
+        </div>
       </div>
       <p></p>
     </div>

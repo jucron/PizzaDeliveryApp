@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
 import {ClientService} from "../../client.service";
+import {interval} from "rxjs";
 
 @Component({
   selector: 'app-bottom-sheet-start-process',
@@ -16,7 +17,11 @@ export class DialogStartProcessComponent implements OnInit {
   }
 
   startProcess(): void {
-    this.clientService.startProcess();
+    let milliseconds = 950;
+    let sub = interval(milliseconds).subscribe(() => {
+        this.clientService.startProcess();
+        sub.unsubscribe();
+    })
+    // this.clientService.startProcess();
   }
-
 }

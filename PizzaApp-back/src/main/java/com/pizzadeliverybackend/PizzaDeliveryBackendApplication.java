@@ -1,20 +1,7 @@
 package com.pizzadeliverybackend;
 
-import com.pizzadeliverybackend.domain.Account;
-import com.pizzadeliverybackend.domain.ClientOrder;
-import com.pizzadeliverybackend.domain.OrderHistory;
-import com.pizzadeliverybackend.repositories.AccountRepository;
-import com.pizzadeliverybackend.services.OrderService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
 
 @SpringBootApplication
 public class PizzaDeliveryBackendApplication {
@@ -25,6 +12,7 @@ public class PizzaDeliveryBackendApplication {
 
 
 }
+/*
 @Component
 class Bootstrap implements CommandLineRunner {
     @Autowired
@@ -71,6 +59,7 @@ class Bootstrap implements CommandLineRunner {
                 );
             }
         }
-
     }
 }
+
+ */

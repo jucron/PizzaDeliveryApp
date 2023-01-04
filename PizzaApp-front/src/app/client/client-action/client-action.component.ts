@@ -24,7 +24,7 @@ export class ClientActionComponent implements OnInit, AfterContentInit {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(DialogStartProcessComponent, {
-      width: '250px',
+      width: '300px',
       enterAnimationDuration,
       exitAnimationDuration,
     });

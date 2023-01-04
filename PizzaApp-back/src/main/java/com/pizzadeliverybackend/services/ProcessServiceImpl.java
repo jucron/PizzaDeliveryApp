@@ -90,8 +90,6 @@ public class ProcessServiceImpl implements ProcessService {
         }
     }
 
-
-
     @Override
     public OrderMinimal getOrder(String username) {
         log.info("getOrder executed for username: "+username);

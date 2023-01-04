@@ -4,9 +4,9 @@
 <div class="container-fluid">
   <!-- row 4x4x4-->
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <main>
         <h2 class="display-4 fw-normal">Actions Panel </h2>
         <p class="fs-5 text-muted">We are very happy to have you as customer! Please choose your next action in the menu
@@ -21,7 +21,7 @@
               <div class="card-body">
                 <small class="text-muted fw-light">Here you can start your Order or continue where you left it. </small>
                 <p></p>
-                <button (click)="openDialog('1000ms', '1000ms')" *ngIf="client_task == 'no_task'; else processStarted"
+                <button (click)="openDialog('600ms', '1000ms')" *ngIf="client_task == 'no_task'; else processStarted"
                         class="w-120 btn btn-lg btn-info" type="button">Start your process</button>
                 <ng-template #processStarted>
                   <button [disabled]="client_task!='executeOrder'"
@@ -66,7 +66,7 @@
         </div>
       </main>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
     </div>
   </div>
 </div>

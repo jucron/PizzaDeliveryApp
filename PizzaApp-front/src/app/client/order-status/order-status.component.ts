@@ -50,6 +50,7 @@ closeIntervalSubscription () {
 }
 
   closeTask() {
+    this.clientService.completeTask({'message':'closeTask'});
   }
 
   forwardStatus() {

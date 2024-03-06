@@ -6,7 +6,7 @@
 3. Implement Auth features
 4. Implement Notification features
 
-# SportsBuddy 
+# Pizza Delivery App 
 
 ### Website of the App: 
 >[TODO: AWS server (live testing)](https://joao-sports-buddy.herokuapp.com/)
